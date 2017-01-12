@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三年二班学生分数查看</title>
+    <link type="text/css" rel="stylesheet" href="css/tb_init.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="">
+        <div class="main">
+            <h3 class="title">三年二班学生分数查询</h3>
+            <span class="  input-group score">
+                <input class="form-control" type="text" id="score" onfocus="hideResult()" placeholder="请输入分数！！！"/>
+                <div id="clear" class="input-group-addon clear" onclick="clear()" >X</div>
+            </span>
+            <div class="  btn-look">
+                <input class=" btn btn-success btn-look" type="button" onclick="backScore()" value="查看"
+                       style="margin: 0 auto;"/>
+            </div>
+
+            <p class=" message-restult" id="result"></p>
+        </div>
+    </div>
+</div>
+<script>
+        document.getElementById("clear").onclick=function(){
+            clear();
+        };
+
+    /*
+     这个方法怎么也不调用，为啥了
+     */
+
+    //清空之前的记录
+    function clear() {
+
+        document.getElementById("score").value = "";
+        hideResult();
+    }
+</script>
+</body>
+</html>

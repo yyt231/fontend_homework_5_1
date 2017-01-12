@@ -1,0 +1,64 @@
+
+.main {
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    margin-top: -150px;
+    margin-left: -300px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.score{
+    width: 300px;
+    margin: 0 auto;
+}
+.clear{
+    cursor: pointer;
+}
+.btn-look{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+/*评价*/
+.message-restult {
+    display: none;
+    width: 300px;
+    text-align: center;
+    height: 100px;
+    background: #e9e9e9;
+    border-radius: 5px;
+    line-height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    -webkit-animation:flipInX 1s .2s ease both;
+    -moz-animation:flipInX 1s .2s ease both;
+}
+
+
+@-webkit-keyframes flipInX{
+    0%{-webkit-transform:perspective(400px) rotateX(90deg);
+        opacity:0}
+    40%{-webkit-transform:perspective(400px) rotateX(-10deg)}
+    70%{-webkit-transform:perspective(400px) rotateX(10deg)}
+    100%{-webkit-transform:perspective(400px) rotateX(0deg);
+        opacity:1}
+}
+@-moz-keyframes flipInX{
+    0%{-moz-transform:perspective(400px) rotateX(90deg);
+        opacity:0}
+    40%{-moz-transform:perspective(400px) rotateX(-10deg)}
+    70%{-moz-transform:perspective(400px) rotateX(10deg)}
+    100%{-moz-transform:perspective(400px) rotateX(0deg);
+        opacity:1}
+}
